@@ -1,18 +1,26 @@
-function calcularScoreBoard(caso) {
+
     let penaltyTime = 0;   
     let casos = caso.split(";");
-    casos.forEach(submission => {
+    casos.forEach(calcularScoreBoard(caso));
 
-        submission.split(" ");
-        let contest = submission [0];
-        let problem = submission [1];
-        let time = submission [2];
-        let L = submission [3];
+    submissios.split(" ");
+    let contest = submission [0];
+    let problem = submission [1];
+    let time = submission [2];
+    let L = submission [3];
 
-        if (L === "I") {
-            penaltyTime += 20;
+function calcularScoreBoard(caso) {
+    let PeAccumulated = 0;
+    let problems = 0;
+    if (L === "I") {
+
+        if (L === "C") {
+                penaltyTime += 20;    
         }
-    });
+            
+    }
+
+        
 }
 
 export default calcularScoreBoard;
