@@ -23,4 +23,14 @@ function calcularScoreBoard(caso) {
         
 }
 
-export default calcularScoreBoard;
+function ordenamiento (){
+
+}
+
+function busqueda_binaria(A,p,q,r){
+
+
+
+}
+
+export default {calcularScoreBoard,ordenamiento,busqueda_binaria};
