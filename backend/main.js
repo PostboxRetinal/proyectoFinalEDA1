@@ -1,27 +1,27 @@
-import { busquedaBinaria } from "./busqueda.js";
-import { calcularScoreBoard } from "./util.js";
+import { calcularScoreBoard } from "/backend/util.js";
+
+const btnCalcularSB = document.getElementById("CalcularSB");
 
 /*
  *  Archivo main.js
- *  Creado por: Sebastian Balanta
+ *  Creado por Nicolás Gonzáles y Sebastian Balanta
  *
  *  Descripción:
- *  Este archivo se encarga de calcular el ScoreBoard de un concurso de programación.
+ *  Este archivo se encarga de llamar la función calcularScoreBoard del archivo util.js y
+ *  mostrar los resultados en la página web.
  */
 
-let cadena = document.getElementById("laPlacaBuscada").value;
-let btnListar = document.getElementById("listar");
-btnBuscar = document.getElementById("btnBuscar");
-let cadenaBuscar = document.getElementById("buscar").value;
-let scoreBoard = calcularScoreBoard(cadena).map(result => `${result.contest} ${result.problemsSolved} ${result.penaltyTime}`).join('\n');
 
-// se asignan eventos
-btnListar.addEventListener("click", calcularScoreBoard(cadena));
-btnBuscar.addEventListener("click", busquedaBinaria(calcularScoreBoard(cadena),0,calcularScoreBoard().length-1,busqueda));
+function handlerCalcular(){
+    // Obtiene el valor del input con id "valorBuscar"
+    let cadenaBuscar = document.getElementById("valorBuscar").value;
+    
+    let result = calcularScoreBoard(cadenaBuscar);
 
-let salida = document.getElementById("salida");
+    let datos = result.map(result => `${result.contest} ${result.problemsSolved} ${result.penaltyTime}`).join('\n');
 
-salida.value = scoreBoard;
+    // Muestra el resultado en el input con id "salida"
+    document.getElementById("salida").value = datos;
+}
 
-
-
+document.getElementById("CalcularSB").addEventListener("click", handlerCalcular);
