@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    
+    background: url("https://institutolastorressigloxxi.edu.mx/wp-content/uploads/2021/05/child-calculator-finance-copy-space-education-1-scaled.jpg") no-repeat;
+      background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldset{
+
+    margin: 10px;
+    padding: 10px; 
+}
+
+legend{
+    padding: 10px;
+    color: white;
+}
+
+textarea{
+    margin: auto;
+    padding: 10px;
+    
+}
+
+footer{
+    text-align: center;
+}
+
+
+main{
+    padding-bottom: 80px;
+}
+
+.btn{
+    padding: 30px;;
+    align-content: center;
+}
+
+button{
+    padding: 5px;
+    border-radius: 5px 5px 5px;
+    background-color:rgb(75, 149, 245);
+}
+
+footer{
+    color: white;
+}
